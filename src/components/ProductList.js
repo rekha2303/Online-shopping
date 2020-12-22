@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Product from "./Product";
 import Title from "./Title";
 import { ProductConsumer } from "../context";
+import PropTypes from "prop-types";
 
 export default class ProductList extends Component {
   render() {
@@ -28,3 +29,13 @@ export default class ProductList extends Component {
     );
   }
 }
+
+Product.PropTypes = {
+  product: PropTypes.shape({
+    id: PropTypes.number,
+    img: PropTypes.string,
+    title: PropTypes.string,
+    price: PropTypes.number,
+    inCart: PropTypes.bool,
+  }).isRequired,
+};
