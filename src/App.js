@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Home from "./components/Home";
+//import Home from "./components/Home";
 import { Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Product from "./components/Product";
+//import Product from "./components/Product";
 import ProductList from "./components/ProductList";
 import Default from "./components/Default";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import Details from "./components/Details";
 import Modal from "./components/Modal";
 function App() {
